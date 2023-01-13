@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>my web page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>/* Style the header with a grey background and some padding */
+        .header {
+          overflow: hidden;
+          background-color: #f1f1f1;
+          padding: 20px 10px;
+        }
+        
+        /* Style the header links */
+        .header a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        /* Change the background color on mouse-over */
+        .header a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        /* Style the active/current link*/
+        .header a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        
+        /* Float the link section to the right */
+        .header-right {
+          float: right;
+        }
+        
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: left;
+            
+          }
+          .header-right {
+            float: none;
+          }
+        }
+        .headerr img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.headerr h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+.img { border-radius: 50%; 
+   
+   
+    
+}
+
+  
   body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
@@ -35,7 +113,8 @@
     border-color: #f1f1f1;
   }
   .carousel-inner img {
-     max-width: 0%; /* Set width to 100% */
+   
+    max-width: 0%; /* Set width to 100% */
     margin: auto;
   }
   .carousel-caption h3 {
@@ -112,24 +191,24 @@
     color: #d5d5d5 !important;
   }
   .navbar-nav li a:hover {
-    color: #fff !important;
+    color: rgb(215, 57, 199) !important;
   }
   .navbar-nav li.active a {
-    color: #fff !important;
+    color: rgb(234, 87, 190) !important;
     background-color: #29292c !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
   }
   .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
+    color: rgb(239, 137, 230);
+    background-color: rgb(252, 246, 250) !important;
   }
   .dropdown-menu li a {
-    color: #000 !important;
+    color: rgb(156, 13, 82) !important;
   }
   .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: rgb(187, 234, 249) !important;
   }
   footer {
     background-color: #2d2d30;
@@ -149,229 +228,420 @@
   textarea {
     resize: none;
   }
+  #lab_social_icon_footer {
+  padding: 40px 0;
+  background-color: #dedede;
+}
 
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+#lab_social_icon_footer a {
+  color: #333;
+}
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">WELCOME</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">ABOUT ME</a></li>
-        <li><a href="#explore">EXPLORE</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://www.tmu.ac.in/">College</a></li>
-            <li><a href="https://rampur.nic.in/hi/">location</a></li>
-            <li><a href="https://github.com/Kaifkhan777">github</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="http://Kaifkhan777.github.io/img/kaif1.jpj.jpg" alt="New York" width="600" height="400">
-        <div class="carousel-caption">
-          <h3>......</h3>
-          <p>T........</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="http://Kaifkhan777.github.io/img/kaif2,jpj.jpg" alt="Chicago" width="600" height="400">
-        <div class="carousel-caption">
-          <h3> ,...............</h3>
-          <p> ..................</p>
-        </div>      
-      </div>
-    
-      <div class="item">
-        <img src="http://Kaifkhan777.github.io/img/kaif3.jpj.jpg" alt="Los Angeles" width="600" height="400">
-        <div class="carousel-caption">
-          <h3>,,,,,,,,,,,,,,</h3>
-          <p>......................</p>
-        </div>      
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3> KAIF KHAN</h3>
-  <p><em>Student</em></p>
-  <p>Hey, my name is Kaif Khan. Currently i am pursuing my bachelor's degree in BBA bachelor' of
-    bussiness administration from Teerthanker Mahaveer university (TMU) ,moradabad,uttar pradesh.
-    .......................................................</p> <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Achievements</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src=",,......" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>..........</p>
-        <p>............</p>
-        <p>.........</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Travelling</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="..........." class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>.............</p>
-        <p>..........</p>
-        <p>..............</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Goals</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="..........." class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>..........</p>
-        <p>...........</p>
-        <p>...........</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Container (TOUR Section) -->
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>feel free to contact</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p> Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Rampur,Uttar Pradesh, India </p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9759529246</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: kaifykhan333777@gmail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <h3 class="text-center">ACCOUNTS</h3>  
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Instagram</a></li>
-    <li><a data-toggle="tab" href="#menu1">Snapchat</a></li>
-    <li><a data-toggle="tab" href="#menu2">Gmail</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h2>The Kaif Khan</h2>
-      <p>..................</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h2>xxxxyyyyyyzzzz</h2>
-      <p>..........</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h2>GMMMMMFF</h2>
-      <p>..................</p>
-    </div>
-  </div>
-</div>
-
-<!-- Image of location/map -->
-
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>THANK YOU!  <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">VISIT AGAIN</a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
   
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+.ig :hover{
+  color: #d3124f;
+}
+.sc :hover{
+  color:#e4eb14
+}
+.ln :hover{
+  color:#150347
+}
+.wc :hover{
+  color:#50ff47
+}
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+#lab_social_icon_footer #social-whatsapp:hover {
+  color: #50ff47;
+}
+#lab_social_icon_footer #social-instagram:hover {
+  color: #d3124f;
+}
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+#lab_social_icon_footer #social-snapchat-ghost:hover {
+  color: #ffff40;
+}
 
-      // Store hash
-      var hash = this.hash;
+#lab_social_icon_footer #social-linkedin:hover {
+  color: #150347;
+}
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+#lab_social_icon_footer #social-em:hover {
+  color: #c15ecc;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+html {
+  background: #2F3238;
+}
+.b{background-color: #000;}
+
+.feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+
+#feedback-main {
+  display: none;
+  float: left;
+  padding-top: 0px;
+}
+
+#feedback-div {
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#feedback-name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+input:hover,
+#feedback-comment:hover,
+input:focus,
+#feedback-comment:focus {
+  background-color: white;
+}
+.hf{
+  background-color: rgb(28, 1, 125);
+
+}
+
+#feedback-button-blue {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+#feedback-button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0493bd;
+}
+
+.feedback-button-blue:hover {
+  color: #3498db;
+}
+
+.feedback-ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feedback-submit:hover .feedback-ease {
+  width: 100%;
+  background-color: white;
+}
+
+
+</style>
+</head>
+<script>
+
+function toggle_visibility() {
+       var e = document.getElementById('feedback-main');
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
+  </script>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+ 
+    <div class="header hf">
+    
+    
+
+        
+       <div  class="s">
+      <a href="xyz"><img src="/images/iphone.jpg" alt="Avatar"  height="50in" width="40in" class="img"/> W E L C O M E </a>
+      
+      <div class="header-right" >
+           
+         
+        
+                  
+                 <a href="kaifykhan333777@gmail.com">G-MAIL</a>
+                <a href="https://api.whatsapp.com/send?phone=+919759529246"><i id="social-whatsapp"  class="fa fa-whatsapp wc" style="font-size:27px"></i> </a>
+              
+            
+         
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+    <div id="band" class="container text-center">
+      <h3> KAIF KHAN</h3>
+      <p><em>Student</em></p>
+      <p>Hey, my name is Kaif Khan. Currently i am pursuing  Bachelor's of Admistration
+        from Teerthanker Mahaveer University (TMU) ,Moradabad,Uttar Pradesh.
+        .......................................................</p> <br>
+
+    </div>
+
+    <break>
+    
+    </break>
+
+    <table  height="800" width="100%" >
+
+      <tr  height="800" width="100%">
+         <td>   
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="/images/iphone.jpg"  width="600" height="200">
+                <div class="carousel-caption">
+                  <h3>......</h3>
+                  <p>T........</p>
+                </div>      
+              </div>
+        
+              <div class="item">
+                <img src="/images/hd.jpg" width="600" height="200">
+                <div class="carousel-caption">
+                  <h3> ,...............</h3>
+                  <p> ..................</p>
+                </div>      
+              </div>
+            
+              <div class="item">
+                <img src="/images/pp.jpg"  width="600" height="200">
+                <div class="carousel-caption">
+                  <h3>,,,,,,,,,,,,,,</h3>
+                  <p>......................</p>
+                </div>      
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </td>
+      </tr>
+   </table >
+
+  
+
+    <script src="_include/js/feedback.js"></script>
+
+    <section id="lab_social_icon_footer" >
+
+
+
+
+
+
+
+
+
+      <!-- Include Font Awesome Stylesheet in Header -->
+     
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="container b">
+              <div class="text-center center-block b">
+                      <a href="https://instagram.com/kaiffkhan_pathan?igshid=NDk5N2NlZjQ="><i id="social-instagram" class="fa  fa-instagram fa-3x social ig"></i></a>
+                    <a href="https://www.snapchat.com/add/kaify_khan77"><i id="social-snapchat-ghost" class="fa fa-snapchat-ghost fa-3x social sc"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-linkedin" class="fa fa-linkedin fa-3x social ln"></i></a>
+                    <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                  
+          </div>
+          <h1  align="center" class=" fa-3x social ">T H A N K   Y O U !</h1>
+        
+          <h3 align="center"><a href="xyz">copyright 2023</a></h3>
+      </div>
+      </section>
+
+       <!--form-->
+   <table >
+    <tr>
+      <td>
+        <div id="feedback-main">
+          <div id="feedback-div">
+            <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+        
+              <p class="name">
+                <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+              </p>
+        
+              <p class="email">
+                <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+              </p>
+        
+              <p class="text">
+                <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>
+              </p>
+        
+              <div class="feedback-submit">
+                <input type="submit" value="SEND" id="feedback-button-blue" />
+                <div class="feedback-ease"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+    
+      </td>
+    </tr>
+  
+</table>
+   <break>
+  
+  </break>
 
 </body>
 </html>
+
